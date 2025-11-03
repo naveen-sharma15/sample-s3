@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Welcome to My Portfolio</title>
+  <style>
+    /* General resets and font settings */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    h1, h2 {
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    /* Welcome Section Styles */
+    .welcome-section {
+      background: linear-gradient(135deg, #4f92bf, #3f78a1);
+      color: white;
+      text-align: center;
+      padding: 150px 0;
+      min-height: 100vh;
+    }
+
+    .welcome-text h1 {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .welcome-text p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      animation: fadeIn 2.5s ease-in-out;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #ff5733;
+      color: white;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #e14f2c;
+      transform: translateY(-5px);
+    }
+
+    /* Projects Section Styles */
+    .projects-section {
+      background-color: #fff;
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    .projects-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+
+    .projects-section p {
+      font-size: 1.1rem;
+      margin-bottom: 40px;
+      color: #666;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Media Query for Responsiveness */
+    @media (max-width: 768px) {
+      .welcome-text h1 {
+        font-size: 2.5rem;
+      }
+
+      .cta-button {
+        padding: 12px 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="welcome-section">
+    <div class="container">
+      <div class="welcome-text">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hi, I'm [Your Name]. I'm a Web Developer.</p>
+        <p>Take a look at my work, and feel free to connect with me!</p>
+        <a href="#projects" class="cta-button">See My Work</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <h2>My Projects</h2>
+      <p>Here are some of the amazing projects I've worked on.</p>
+      <!-- Add project cards here -->
+    </div>
+  </section>
+
+</body>
+</html>
